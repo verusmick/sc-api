@@ -22,7 +22,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/SF-LicGenerator', {useMongoClient: true});
+mongoose.connect('mongodb://localhost/sc', {useMongoClient: true});
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
