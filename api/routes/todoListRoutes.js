@@ -19,12 +19,12 @@ module.exports = app => {
 
   app.route('/users')
     .post(userHandlers.register)
-    .get(userHandlers.listAllUsers)
+    .get(userHandlers.loginRequired, userHandlers.listAllUsers)
 
   app.route('/users/:userId')
-    .get(userHandlers.getUser)
-    .delete(userHandlers.removeUser)
-    .put(userHandlers.updateUser)
+    .get(userHandlers.loginRequired, userHandlers.getUser)
+    .delete(userHandlers.loginRequired, userHandlers.removeUser)
+    .put(userHandlers.loginRequired, userHandlers.updateUser)
 
   app.route('/auth/login')
     .post(userHandlers.signIn)
