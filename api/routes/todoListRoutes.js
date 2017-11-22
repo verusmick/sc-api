@@ -19,6 +19,12 @@ module.exports = app => {
 
   app.route('/users')
     .post(userHandlers.register)
+    .get(userHandlers.listAllUsers)
+
+  app.route('/users/:userId')
+    .get(userHandlers.getUser)
+    .delete(userHandlers.removeUser)
+    .put(userHandlers.updateUser)
 
   app.route('/auth/login')
     .post(userHandlers.signIn)
@@ -37,9 +43,6 @@ module.exports = app => {
   app.route('/licenses')
     .get(userHandlers.loginRequired, historyHandlers.licensesList)
     .post(userHandlers.loginRequired, licGeneratorHandlers.licGenerate)
-
-  // app.route('/licenses/tree')
-  //   .get(historyHandlers.licensesListTree)
 
   app.route('/licenses/:licenseId')
     .delete(userHandlers.loginRequired, licGeneratorHandlers.deleteLicense)

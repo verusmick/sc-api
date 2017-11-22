@@ -24,6 +24,40 @@ exports.register = (req, res) => {
   });
 };
 
+exports.removeUser = (req, res) => {
+  User.remove({
+    _id: req.params.userId
+  }, function (err, user) {
+    if (err)
+      res.send(err);
+    res.json({message: 'User successfully deleted'});
+  });
+};
+
+exports.getUser = (req, res) => {
+  User.findById(req.params.userId, function (err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });
+};
+
+exports.listAllUsers = (req, res) => {
+  User.find({}, function (err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });
+};
+
+exports.updateUser = function (req, res) {
+  User.findOneAndUpdate({_id: req.params.userId}, req.body, {new: true}, function (err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });
+};
+
 exports.signIn = (req, res) => {
   User.findOne({
     username: req.body.username
