@@ -1,8 +1,8 @@
 'use strict';
-import mongoose from "mongoose";
-import bcrypt from "bcrypt";
+import mongoose from "mongoose"
+import bcrypt from "bcrypt"
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema
 
 /**
  * User Schema
@@ -43,10 +43,10 @@ var UserSchema = new Schema({
   //   type: Date,
   //   default: Date.now
   // }
-});
+})
 
 UserSchema.methods.comparePassword = function (password) {
-  return bcrypt.compareSync(password, this.hashPassword);
-};
+  return bcrypt.compareSync(password, this.hashPassword)
+}
 
 mongoose.model('User', UserSchema);
