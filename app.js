@@ -7,6 +7,8 @@ var cors = require('cors')
 /*** Import Models ***/
 import User from "./api/models/userModel"
 import TK from "./api/models/token.model"
+import account from "./api/models/account.model"
+import accountType from "./api/models/accountType.model"
 
 /*** Import Controllers ***/
 import tkHandlers from "./api/services/token.service"

@@ -1,0 +1,177 @@
+{
+  accounts: [
+    {
+      "name": "Activo",
+      "description": "Acitvos",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "1",
+      "creationDate": null,
+      "updatedDate": null,
+      "parent": []
+    },
+    {
+      "name": "1 Activo (rubro)mcaja y banco( primer subrubro del rubro activo)",
+      "description": "1 Activo (rubro)mcaja y banco( primer subrubro del rubro activo)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "11",
+      "parent": []
+    },
+    {
+      "name": "Caja ( primera cuenta subrubro caja y banco)",
+      "description": "Caja ( primera cuenta subrubro caja y banco)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "111",
+      "parent": []
+    },
+    {
+      "name": "Bancos cuenta corriente(segunda cuenta integrante del subrubro caja y banco)",
+      "description": "Bancos cuenta corriente(segunda cuenta integrante del subrubro caja y banco)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "112 ",
+      "parent": []
+    },
+    {
+      "name": "Pasivo (rubro)",
+      "description": "Pasivo (rubro)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "2",
+      "parent": []
+    },
+    {
+      "name": "Deudas comerciales( primer subrubro del rubro pasivo)",
+      "description": "Deudas comerciales( primer subrubro del rubro pasivo)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "21",
+      "parent": []
+    },
+    {
+      "name": "proveedores ( primera cuenta integrante subrubro deudas comerciales)",
+      "description": "proveedores ( primera cuenta integrante subrubro deudas comerciales)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "211",
+      "parent": []
+    },
+    {
+      "name": "Patrimonio neto (rubro)",
+      "description": "Patrimonio neto (rubro)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "3",
+      "parent": []
+    },
+    {
+      "name": "Capital suscripto ( primer subrubro del rubro activo)",
+      "description": "Capital suscripto ( primer subrubro del rubro activo)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "31",
+      "parent": []
+    },
+    {
+      "name": "acciones en circulación ( primera cuenta del subrubro capital suscripto)",
+      "description": "acciones en circulación ( primera cuenta del subrubro capital suscripto)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "311",
+      "parent": []
+    },
+    {
+      "name": "Ingresos (rubro)",
+      "description": "Ingresos (rubro)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "4",
+      "parent": []
+    },
+    {
+      "name": "Ganancias ordinarias( primer subrubro del rubro ingresso)",
+      "description": "Ganancias ordinarias( primer subrubro del rubro ingresso)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "41",
+      "parent": []
+    },
+    {
+      "name": "Ventas ( primer cuenta del subrubro ganacias ordinarias)",
+      "description": "Ventas ( primer cuenta del subrubro ganacias ordinarias)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "411",
+      "parent": []
+    },
+    {
+      "name": "ganacias extraordinarias ( segundo subrubro del rubro ingresos)",
+      "description": "ganacias extraordinarias ( segundo subrubro del rubro ingresos)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "42",
+      "parent": []
+    },
+    {
+      "name": "Sobrante de caja ( primer cuenta del subrubro ganancias extraordinarias)",
+      "description": "Sobrante de caja ( primer cuenta del subrubro ganancias extraordinarias)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "421",
+      "parent": []
+    },
+    {
+      "name": "Egresos(rubro)",
+      "description": "Egresos(rubro)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "5",
+      "parent": []
+    },
+    {
+      "name": "Perdidas ordinarias (primer subrubro del rubro egresos)",
+      "description": "Perdidas ordinarias (primer subrubro del rubro egresos)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "51",
+      "parent": []
+    },
+    {
+      "name": "costo de ventas ( primera cuenta del subrubro perdidas ordinarias)",
+      "description": "costo de ventas ( primera cuenta del subrubro perdidas ordinarias)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "511",
+      "parent": []
+    },
+    {
+      "name": "Sueldos y jornales (segunda cuenta del subrubro perdidas ordinarias)",
+      "description": "Sueldos y jornales (segunda cuenta del subrubro perdidas ordinarias)",
+      "accountType": "",
+      "group": "",
+      "type": "group",
+      "code": "512",
+      "parent": []
+    }
+  ]
+}
